@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #efecec;
+}
+
+.chatfixedtop {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    color: rgb(237, 234, 234);
+    font-size: 15px;
+    font-weight: 300;
+    border: solid;
+    border-radius: 10%;
+    border-top: 10px solid #e39292;
+    border-left: 10px solid rgba(7, 119, 231, 0.635);
+    border-right: 10px solid rgb(212, 156, 15);
+    border-bottom: 10px solid #7e0acc;
+    background-color: #579e00a4;
+    text-align: center;
+    font-family: cursive;
+    font-size: large;
+}
+
+.chatresponsefixed {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    width: 80vh;
+    margin-left: 20%;
+    margin-top: -2%;
+    border-radius: 5px;
+}
+
+.chatmessage {
+    border-radius: 50px;
+    color: rgb(105, 105, 255);
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 70%;
+    margin-top: 2%;
+    font-size: 17px;
+}
+
+hr {
+    margin-top: -2%;
+    border: solid;
+    border-color: rgba(255, 217, 0, 0.228);
+}
+
+.chatimguser {
+    /* width: 40px; */
+    height: 40px;
+    margin-top: -20%;
+    margin-left: 65%;
+}
+
+.inputboxmic {
+    height: 45px;
+    margin-top: -10%;
+    margin-left: -45%;
+    cursor: pointer;
+}
+
+.uploadfile {
+    cursor: pointer;
+}
+
+.chatimgbot {
+    width: 50px;
+    height: 90px;
+    margin-left: 4%;
+}
+
+.chatimgfixedtop {
+    width: 100px;
+    height: 100px;
+    margin-left: 8%;
+}
+
+.fixedpencil {
+    width: 23px;
+    height: 45px;
+    margin-top: 20%;
+    margin-left: -14%;
+}
+
+.inputboxpencil {
+    width: 35px;
+    height: 35px;
+    margin-top: -2%;
+}
+
+.chatresponseforcopy {
+    background-color: #97c262;
+    margin-left: 8%;
+    padding: 25px;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    width: 60vh;
+    border-radius: 8px;
+}
+
+.copy-buttonbot {
+    cursor: pointer;
+    margin-left: 90%;
+}
+
+.copyiconresponsebot {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.copyiconresponseuser {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.editiconresponseuser {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.edit-button,
+.copy-button {
+    background-color: #4f73c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    /* margin-top: 5%; */
+}
+
+.edit-button:hover,
+.copy-button:hover {
+    background-color: #2ecb72;
+}
+
+.messagebar {
+    position: fixed;
+    bottom: 0;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top: 2px solid #ae7bff; */
+    /* background-color: #97c262; */
+}
+
+.messagebar .bar-wrapper {
+    background-color: #4f73c1;
+    border-radius: 50px;
+    width: 50vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar-wrapper input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+    color: #ffffff;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.bar-wrapper input::placeholder {
+    color: #e0e0e0;
+    font-size: large;
+}
+
+.messagebar button {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(244, 198, 198);
+}
+
+.messagebar button .material-symbols-outlined {
+    font-size: xx-large;
+}
+
+.messagebar button .material-symbols-outlined:hover {
+    font-size: x-large;
+    color: #8cff00;
+}
+
+.message-box {
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+    margin-left: 20%;
+    border: solid;
+    border-radius: 15%;
+    border-top: 15px solid;
+    width: 60%;
+    margin-top: -3.5%;
+    border-top-color: #965050;
+    border-bottom-color: #c508ff;
+    border-left-color: #0bcd62;
+    border-right-color: #0b38cd;
+}
+
+.message-box::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.message-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+
+/* this part is for dark mode */
+
+label {
+    width: 76px;
+    height: 35px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 300px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 3s;
+    margin-left: 85%;
+}
+
+label:after {
+    content: "";
+    width: 31px;
+    height: 27px;
+    position: absolute;
+    top: 4px;
+    left: 3.5px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(174, 85, 85, 0.2);
+    transition: 1s;
+}
+
+.inputt {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked+label {
+    background: rgb(72, 72, 72);
+}
+
+input:checked+label:after {
+    left: 70px;
+    transform: translateX(-90%);
+    background: linear-gradient(180deg, gold, #646262);
+}
+
+label:active:after {
+    width: 180px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.backgroundcolour {
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    transition: 2s;
+    margin-top: -10%;
+    margin-left: -3vw;
+}
+
+input:checked+label+.backgroundcolour {
+    background: #242424;
+}
+
+label svg {
+    position: absolute;
+    width: 20px;
+    top: 20%;
+    z-index: 100;
+}
+
+label svg.sun {
+    left: 8px;
+    fill: white;
+    transition: 5s;
+}
+
+label svg.moon {
+    left: 50px;
+    fill: grey;
+    transition: 8s;
+}
+
+input:checked+label svg.sun {
+    fill: whitesmoke;
+    transition: 15s;
+}
+
+input:checked+label svg.moon {
+    fill: whitesmoke;
+    transition: 5s;
+}
+
+/* (dark mode part end) */
+
+
+
+
+
+
+/* 
+  @media screen and (max-width: 920px){
+   
+  } */
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: #efecec;
+        padding: 10px;
+    }
+
+    .chatfixedtop {
+        display: flex;
+        gap: 20px;
+        color: rgb(237, 234, 234);
+        font-size: 15px;
+        font-weight: 300;
+        border: solid; 
+        border-radius: 10%;
+        border-top: 10px solid #e39292;
+        border-left: 10px solid rgba(7, 119, 231, 0.635);
+        border-right: 10px solid rgb(212, 156, 15);
+        border-bottom: 10px solid #7e0acc;
+        background-color: #579e00a4;
+        text-align: center;
+        font-family: auto;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .fixedpencil {
+        width: 20px;
+        height: 30px;
+        margin-top: -20%;
+        margin-left: 65%;
+    }
+
+    .chatresponsefixed {
+        width: 80vw;
+        margin-left: 2%;
+        margin-top: 1%;
+        border-radius: 10%;
+    }
+
+    .chatmessage {
+        margin-left: 30%;
+        font-size: 12px;
+    }
+
+    .message-box {
+        width: 95vw;
+        margin-left: 0%;
+        border-radius: 10%;
+        position: fixed;
+        margin-top: 5%;
+        height: 85vh;
+    }
+
+    label {
+        margin-left: 40%;
+        margin-top: -5%;
+        position: fixed;
+    }
+
+    .messagebar .bar-wrapper {
+        width: 90vw;
+        margin-left: -5%;
+        /* margin-top: 3%; */
+        padding: 5px;
+        position: fixed;
+    }
+
+
+    .chatimgbot {
+        width: 45px;
+        height: 65px;
+    }
+
+    .chatimguser {
+        margin-top: 3%;
+        margin-left: 75%;
+        width: 35px;
+        height: 45px;
+    }
+
+    .chatimgfixedtop {
+        width: 60px;
+        height: 60px;
+    }
+
+    .inputboxpencil,
+    .inputboxmic {
+        width: 35px;
+        height: 35px;
+    }
+
+    .edit-button,
+    .copy-button {
+        padding: 2px 6px;
+        /* font-size: 8px; */
+    }
+
+    /* .message-options {
+      flex-direction: column;
+      gap: 3px;
+    } */
+    .edit-button {
+        margin-left: 10%;
+    }
+
+    .chatmessage {
+        border-radius: 50px;
+        color: rgb(105, 105, 255);
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 47%;
+        margin-top: 2%;
+        font-size: 17px;
+        width: 25vh;
+    }
+
+    .chatresponseforcopy {
+        background-color: #97c262;
+        margin-left: 8%;
+        padding: 30px;
+        color: white;
+        font-size: 15px;
+        font-weight: 300;
+        width: 30vh;
+        border-radius: 8px;
+    }
+
+    .bar-wrapper input::placeholder {
+        color: #e0e0e0;
+        font-size: medium;
+    }
+}
