@@ -3,4 +3,4 @@ This is a clone of Gemini, who is a chatbot that uses artificial intelligence (A
 
 🔗 Live website: https://clonechatbot.netlify.app/
 
-Skills: HTML, CSS, Javascript.
+🧩 Tech Stack: HTML, CSS, Javascript.
